@@ -8,7 +8,7 @@ namespace largestsquarematrix
 {
     internal class LargestSqaureMatrixUtility
     {
-        static int highestSquare = 0;
+        public static int highestSquare { get; private set; }
 
         public static void LargestSquareMatrix(string[] strArr)
         {
