@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "largestsquarematrix", "largestsquarematrix.csproj", "{9EDCE030-2929-47EC-A20D-F70C2D88ABB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "largestSquareTests", "..\largestSquareTests\largestSquareTests.csproj", "{536BC5E8-293A-4D4C-807D-440DB8AD5687}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9EDCE030-2929-47EC-A20D-F70C2D88ABB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EDCE030-2929-47EC-A20D-F70C2D88ABB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EDCE030-2929-47EC-A20D-F70C2D88ABB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{536BC5E8-293A-4D4C-807D-440DB8AD5687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536BC5E8-293A-4D4C-807D-440DB8AD5687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536BC5E8-293A-4D4C-807D-440DB8AD5687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536BC5E8-293A-4D4C-807D-440DB8AD5687}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
