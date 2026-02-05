@@ -73,8 +73,15 @@ namespace largestsquarematrix
                         int numberOfOnesAccountedFor = onesInARow; //if its a perfect square then the amount of 1s for a valid square is to the power of 2 i.e. onesInARow = 2,
                                                                    //therefore numberOfOnesAccountedFor = 4
 
+                        int endingRow = i + onesInARow;
+
+                        if(endingRow > strArr.Length)
+                        {
+                            break;
+                        }
+
                         //we check the amount of rows below so we take one away cause we've already checked one row
-                        for (int p = i + 1; p < onesInARow; p++)
+                        for (int p = i + 1; p < endingRow; p++)
                         {
                             //check this currrent row
                             for (int j = rowSweeperIndx - localizedOnesInARow; j <= rowSweeperIndx; j++)
