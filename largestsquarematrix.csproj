@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\largestSquareTests\largestSquareTests.csproj" />
+    <Compile Remove="LargestSquareTests\**" />
+    <EmbeddedResource Remove="LargestSquareTests\**" />
+    <None Remove="LargestSquareTests\**" />
   </ItemGroup>
 
 </Project>

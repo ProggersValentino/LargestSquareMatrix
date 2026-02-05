@@ -6,17 +6,29 @@ using System.Threading.Tasks;
 
 namespace largestsquarematrix
 {
-    internal class LargestSqaureMatrixUtility
-    {
-        public static int highestSquare { get; private set; }
 
-        public static void LargestSquareMatrix(string[] strArr)
+    /// <summary>
+    /// 
+    /// </summary>
+    public class LargestSqaureMatrixUtility
+    {
+        
+        /// <summary>
+        /// takes in a string array of a matrix and finds the highest square matrix area that can be 
+        /// created within it
+        /// 
+        /// Improvements: adding some checks for to see if its a valid matrix and shifting it to a binary check 
+        /// to bring the time complexity to O(3n) compared to O(5n)
+        /// </summary>
+        /// <param name="strArr"></param>
+        /// <returns></returns>
+        public static int LargestSquareMatrix(string[] strArr)
         {
             //if 1 count up else reset to 0 
             //if number of 1s in row is greater 1 check rows below for same pattern
             //if row/s are valid increase highestSquare by 1
 
-
+            int highestSquare = 0;
 
             int onesInARow = 0;
 
@@ -107,8 +119,15 @@ namespace largestsquarematrix
 
             }
 
+            return highestSquare;
+
         }
 
+        /// <summary>
+        /// Of the inputed number, return a value times by the inputted number
+        /// </summary>
+        /// <param name="largestSquare"></param>
+        /// <returns></returns>
         public static int ReturnAreaOfLargestSquare(int largestSquare)
         {
             return largestSquare * largestSquare;
